@@ -1,30 +1,30 @@
 {
-  "name": "gulp-fscss",
-  "version": "1.0.0",
-  "description": "Gulp plugin to replace css media url with FirstSpirit $CMS_REF(...)$",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PeterSonne/gulp-fscss.git"
-  },
-  "keywords": [
-    "gulpplugin",
-    "firstspirit",
-    "cms",
-    "media",
-    "css",
-    "reference"
-  ],
-  "author": "Peter Sonne",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/PeterSonne/gulp-fscss/issues"
-  },
-  "homepage": "https://github.com/PeterSonne/gulp-fscss#readme",
-  "devDependencies": {
-    "jest": "^27.3.1"
-  }
+	"name": "gulp-fscss",
+	"version": "1.0.0",
+	"description": "Gulp plugin to replace css media url with FirstSpirit $CMS_REF(...)$",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/PeterSonne/gulp-fscss.git"
+	},
+	"keywords": [
+		"gulpplugin",
+		"firstspirit",
+		"cms",
+		"media",
+		"css",
+		"reference"
+	],
+	"author": "Peter Sonne",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/PeterSonne/gulp-fscss/issues"
+	},
+	"homepage": "https://github.com/PeterSonne/gulp-fscss#readme",
+	"devDependencies": {
+		"jest": "^27.3.1"
+	}
 }
