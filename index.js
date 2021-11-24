@@ -36,7 +36,6 @@ module.exports = function(options = {}) {
             
             while((match = reg.exec(cssContent)) !== null) {
                 if(!match) {return false;}
-                console.log('matched: ', match[3])
                 const fileBasename = match[3]
                     .split('/')
                     .pop()
