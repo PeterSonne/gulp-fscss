@@ -32,3 +32,17 @@ gulp
 ```
 This basic example takes the file ```someCssFile.css```, replaces the urls and saves it in the destination directory ```dist/css```.
 
+If you need parameters like ```abs:2``` (see https://docs.e-spirit.com/odfs/template-develo/template-syntax/instructions/cms_ref/index.html#Text_Bild_5) you can simply pass them as an options object to the plugin function:
+```
+// import the plugin
+const gulpFsCss = require('gulp-fscss');
+
+// ...
+
+// somewhere e.g. in a registered task
+gulp
+	.src('src/css/myFolder/someCssFile.css')
+	.pipe(gulpFsCss({abs:2}))
+	.pipe(gulp.dest('dist/css'));
+```
+Note: Currently only ```abs``` is supported - if you need other parameters please send an issue on github - I'll gladly add them
