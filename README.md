@@ -18,7 +18,7 @@ Since this is a gulp plugin, which is a great task runner for npm projects, you 
 
 Now, you have a Gulpfile.js and some tasks to do and most likely there are some CSS files with urls you want to replace. The logic is simply:
 
-```
+```javascript
 // import the plugin
 const gulpFsCss = require('gulp-fscss');
 
@@ -33,7 +33,7 @@ gulp
 This basic example takes the file ```someCssFile.css```, replaces the urls and saves it in the destination directory ```dist/css```.
 
 If you need parameters like ```abs:2``` (see https://docs.e-spirit.com/odfs/template-develo/template-syntax/instructions/cms_ref/index.html#Text_Bild_5) you can simply pass them as an options object to the plugin function:
-```
+```javascript
 // import the plugin
 const gulpFsCss = require('gulp-fscss');
 
