@@ -1,13 +1,14 @@
 const Transform = require('stream').Transform;
 const reg = /(=|url\()(["'`]?){1}(?!\/\/)([a-z0-9_\/.-]+\.[a-z0-9]+)(?:[#?].+?)?\2/gim;
-const defaultOptions = ['abs'];
+const defaultOptions = ['abs', 'contentId', 'index', 'lang', 'postfix', 'remote', 'res',
+	'template', 'templateSet', 'version'];
 
 
 module.exports = function(options = {}) {
     // get valid options
     const optionString = defaultOptions
         .filter(e => e in options)
-        .map(e => `${e}: ${options[e]}`)
+        .map(e => `${e}:${typeof options[e] === 'number' ? options[e] : `"${options[e]}"` }`)
         .join(", "); // actually not needed, but for future maybe?
 
     // create stream transform instance
