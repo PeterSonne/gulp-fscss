@@ -42,7 +42,8 @@ module.exports = function(options = {}) {
                     .pop()
                     .split('.')
                     .shift()
-                    .replace(/[^a-z0-9_]+/g, '_');
+                    .replace(/[^a-z0-9_]+/gi, '_')
+                    .toLowerCase();
 
                 cssContent = cssContent.replace(
                     match[0],
