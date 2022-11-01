@@ -1,6 +1,6 @@
 {
 	"name": "gulp-fscss",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "Gulp plugin to replace css media url with FirstSpirit $CMS_REF(...)$",
 	"main": "index.js",
 	"scripts": {
